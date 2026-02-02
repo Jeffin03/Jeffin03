@@ -2,9 +2,8 @@
 
 I'm interested in **Cybersecurity, Linux, and DevOps**.
 
-- 🐧 Linux user 
-- 🔐 Learning cryptography, data analysis, and security fundamentals
-- ⚙️ Working with automation and CI/CD using GitHub Actions
-- 🛠️ Building tools to understand how security engineers analyze data
+- 🔐 Learning cryptography fundamentals and security tooling
+- ⚙️ Working with automation, CI/CD, and GitHub Actions
+- 🛠️ Building tools to understand how security engineers analyze and transform data safely
 
-Currently focused on hands-on learning through open-source projects.
+Focused on hands-on learning through open-source projects.
