@@ -1,4 +1,4 @@
-## Hi, I'm Jeffin 👋
+## Hi, I'm Jeffin Issac 👋
 
 I'm interested in **Cybersecurity, Linux, and DevOps**.
 
