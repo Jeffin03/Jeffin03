@@ -1,10 +1,11 @@
-## Hi, I'm Jeffin Issac 👋
+## Hi, I'm Jeffin Issac
 
-I'm interested in **Cybersecurity, Linux, and DevOps**.
+I build web applications and enjoy working across the stack, from frontend development to deployment and infrastructure.
 
-- 🔐 Learning cryptography fundamentals and security tooling
-- ⚙️ Working with automation, CI/CD, and GitHub Actions
-- 🐚 Writing shell scripts for system tasks and automation
-- 🐳 I like using containers to keep development environments isolated and reproducible
+Current areas of interest:
 
-Focused on hands-on learning through open-source projects.
+* Angular and frontend architecture
+* Backend systems with Java
+* Linux, containers, and self-hosted infrastructure
+* DevOps, CI/CD, and automation
+* Cybersecurity and networking
