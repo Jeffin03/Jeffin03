@@ -2,10 +2,4 @@
 
 I build web applications and enjoy working across the stack, from frontend development to deployment and infrastructure.
 
-Current areas of interest:
-
-* Angular and frontend architecture
-* Backend systems with Java
-* Linux, containers, and self-hosted infrastructure
-* DevOps, CI/CD, and automation
-* Cybersecurity and networking
+My current interests include Linux, DevOps, backend systems, containers, and cybersecurity.
