@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Resume | Restricted</title>
+<link rel="icon" href="assets/img/logo_crop.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .gate{
+    min-height:calc(100vh - 121px);
+    display:flex; align-items:center; justify-content:center; padding:40px 24px;
+  }
+  .gate-card{
+    max-width:420px; width:100%; text-align:center;
+    background:var(--card); border:1px solid var(--line); border-radius:16px; padding:40px 32px;
+  }
+  .gate-lock{
+    width:64px; height:64px; margin:0 auto 18px; border-radius:16px;
+    background:var(--navy); border:1px solid var(--blue);
+    display:flex; align-items:center; justify-content:center; font-size:28px;
+  }
+  .gate-card h1{ font-size:20px; margin-bottom:8px; }
+  .gate-card p{ color:var(--muted); font-size:14px; margin-bottom:24px; }
+  .gate-form{ display:flex; flex-direction:column; gap:12px; }
+  .gate-form input{
+    padding:13px 14px; border-radius:10px; border:1px solid var(--line);
+    background:var(--bg); color:var(--ink); font-size:15px; outline:none;
+  }
+  .gate-form input:focus{ border-color:var(--blue); }
+  .gate-form button{
+    padding:13px; border-radius:10px; border:1px solid var(--blue);
+    background:var(--navy); color:#fff; font-size:15px; font-weight:600; cursor:pointer;
+  }
+  .gate-form button:hover{ background:var(--navy-2); color:var(--accent); }
+  .gate-error{ display:none; color:#ff7b7b; font-size:13.5px; margin-top:2px; }
+  .gate-hint{ margin-top:18px; font-size:12.5px; color:var(--muted); }
+  .gate-hint a{ color:var(--blue-2); }
+
+  .resume-wrap{ display:none; padding:28px 12px 48px; }
+  #resumeFrame{ width:100%; border:none; background:#fff; border-radius:10px; box-shadow:0 6px 30px rgba(0,0,0,.4); }
+  .frame-bar{ max-width:210mm; margin:0 auto 12px; display:flex; justify-content:flex-end; }
+  .frame-bar button{
+    border:1px solid var(--line); background:var(--card); color:var(--ink);
+    padding:9px 16px; border-radius:8px; cursor:pointer; font-size:13px;
+  }
+  .frame-bar button:hover{ border-color:var(--blue); color:var(--accent); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a class="brand" href="index.html">Jeffin<span>.dev</span></a>
+    <div class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="gate" id="gate">
+    <div class="gate-card">
+      <div class="gate-lock">&#128274;</div>
+      <h1>Restricted Area</h1>
+      <p>This page is encrypted. Enter the passphrase to view the resume.</p>
+      <form class="gate-form" id="gateForm">
+        <input type="password" id="passphrase" placeholder="Passphrase" autocomplete="off" required>
+        <div class="gate-error" id="gateError">Incorrect passphrase. Try again.</div>
+        <button type="submit">Unlock</button>
+      </form>
+      <div class="gate-hint">Only the passphrase holder can access this. <a href="index.html">Back to portfolio</a></div>
+    </div>
+  </div>
+
+  <div class="resume-wrap" id="resumeWrap">
+    <div class="frame-bar">
+      <button onclick="printResume()">&#128424; Print / Save as PDF</button>
+    </div>
+    <iframe id="resumeFrame" title="Resume"></iframe>
+  </div>
+</main>
+
+<script src="assets/js/resume-data.js"></script>
+<script src="assets/js/resume.js"></script>
+</body>
+</html>

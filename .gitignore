@@ -1,0 +1,5 @@
+# Plaintext resume sources — NEVER commit these.
+resume-src/
+
+# Local passphrase files.
+.passphrase
