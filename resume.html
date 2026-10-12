@@ -38,14 +38,45 @@
   .gate-hint{ margin-top:18px; font-size:12.5px; color:var(--muted); }
   .gate-hint a{ color:var(--blue-2); }
 
-  .resume-wrap{ display:none; padding:28px 12px 48px; }
-  #resumeFrame{ width:100%; border:none; background:#fff; border-radius:10px; box-shadow:0 6px 30px rgba(0,0,0,.4); }
-  .frame-bar{ max-width:210mm; margin:0 auto 12px; display:flex; justify-content:flex-end; }
-  .frame-bar button{
-    border:1px solid var(--line); background:var(--card); color:var(--ink);
-    padding:9px 16px; border-radius:8px; cursor:pointer; font-size:13px;
+  .resume-wrap{ display:none; padding:24px 12px 60px; max-width:210mm; margin:0 auto; }
+
+  .resume-toolbar{
+    display:none; flex-wrap:wrap; align-items:center; gap:8px;
+    position:relative; margin-bottom:12px;
+    background:var(--card); border:1px solid var(--line); border-radius:12px; padding:10px 12px;
   }
-  .frame-bar button:hover{ border-color:var(--blue); color:var(--accent); }
+  .resume-toolbar.open{ display:flex; }
+  .tb-left, .tb-right{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .tb-right{ margin-left:auto; }
+  .resume-toolbar button{
+    border:1px solid var(--line); background:var(--bg-2); color:var(--ink);
+    padding:8px 13px; border-radius:8px; cursor:pointer; font-size:13px;
+  }
+  .resume-toolbar button:hover{ border-color:var(--blue); color:var(--accent); }
+  .resume-toolbar button.primary{ background:var(--navy); color:#fff; border-color:var(--blue); }
+  .resume-toolbar button.primary:hover{ background:var(--navy-2); color:var(--accent); }
+  .tb-status{ font-size:12px; color:var(--muted); }
+  .tb-status.saved{ color:var(--accent); }
+
+  .history-panel{
+    display:none; position:absolute; top:calc(100% - 4px); left:12px; z-index:20;
+    width:min(420px, 90vw); max-height:340px; overflow:auto;
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    box-shadow:0 18px 50px rgba(0,0,0,.5); padding:12px;
+  }
+  .history-panel.open{ display:block; }
+  .hist-head{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:8px; }
+  .hist-head b{ font-size:13.5px; }
+  .hist-head span{ font-size:11px; color:var(--muted); }
+  .hist-empty{ font-size:12.5px; color:var(--muted); padding:6px 0; }
+  .hist-row{ display:flex; align-items:center; gap:8px; padding:7px 0; border-top:1px solid var(--line); }
+  .hist-meta{ flex:1 1 auto; min-width:0; display:flex; flex-direction:column; }
+  .hist-meta b{ font-size:12.5px; font-weight:600; }
+  .hist-meta span{ font-size:11px; color:var(--muted); }
+  .hist-row button{ padding:5px 10px; font-size:12px; }
+  .hist-row button.ghost{ background:transparent; color:var(--muted); }
+
+  #resumeFrame{ width:100%; border:none; background:#fff; border-radius:10px; box-shadow:0 6px 30px rgba(0,0,0,.4); }
 </style>
 </head>
 <body>
@@ -66,7 +97,7 @@
     <div class="gate-card">
       <div class="gate-lock">&#128274;</div>
       <h1>Restricted Area</h1>
-      <p>This page is encrypted. Enter the passphrase to view the resume.</p>
+      <p>This page is encrypted. Enter the passphrase to view and edit the resume.</p>
       <form class="gate-form" id="gateForm">
         <input type="password" id="passphrase" placeholder="Passphrase" autocomplete="off" required>
         <div class="gate-error" id="gateError">Incorrect passphrase. Try again.</div>
@@ -77,9 +108,30 @@
   </div>
 
   <div class="resume-wrap" id="resumeWrap">
-    <div class="frame-bar">
-      <button onclick="printResume()">&#128424; Print / Save as PDF</button>
+    <div class="resume-toolbar" id="resumeToolbar">
+      <div class="tb-left">
+        <button id="btnSave" class="primary" type="button">Save version</button>
+        <button id="btnHistory" type="button">History</button>
+        <button id="btnSig" type="button">Upload signature</button>
+        <button id="btnExport" type="button">Export HTML</button>
+        <button id="btnRevert" type="button">Revert to original</button>
+      </div>
+      <div class="tb-right">
+        <span class="tb-status" id="resumeStatus">Ready</span>
+        <button id="btnPrint" type="button">Print / Save as PDF</button>
+      </div>
+
+      <input type="file" id="sigInput" accept="image/*" hidden>
+
+      <div class="history-panel" id="historyPanel">
+        <div class="hist-head">
+          <b>Version history</b>
+          <span>saved in this browser</span>
+        </div>
+        <div class="hist-list" id="historyList"></div>
+      </div>
     </div>
+
     <iframe id="resumeFrame" title="Resume"></iframe>
   </div>
 </main>
