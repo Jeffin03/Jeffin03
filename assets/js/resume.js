@@ -94,7 +94,7 @@
     var body = clone.querySelector('body');
     if (body) body.classList.remove('editing');
     var slot = clone.querySelector('#signature-slot');
-    if (slot && !slot.querySelector('img')) slot.textContent = '';
+    if (slot) slot.classList.remove('empty');
     return '<!DOCTYPE html>\n' + clone.outerHTML;
   }
 
@@ -206,7 +206,7 @@
     var slot = doc.getElementById('signature-slot');
     if (slot && !slot.querySelector('img')) {
       slot.classList.add('empty');
-      if (!slot.textContent.trim()) slot.textContent = 'Signature';
+      if (!slot.textContent.trim()) slot.textContent = 'Name & Signature';
     }
 
     doc.body.addEventListener('input', debounceSave);
