@@ -6,7 +6,7 @@
 
 MCA student at Kristu Jayanti University building across the stack — from frontend to deployment and infrastructure.
 
-**[View Portfolio](https://jeffin03.github.io/Jeffin03/)**
+**[View Portfolio](https://jeffin03.vercel.app)**
 &nbsp;&nbsp;|&nbsp;&nbsp;
 [LinkedIn](https://www.linkedin.com/in/jfn23)
 &nbsp;&nbsp;|&nbsp;&nbsp;
