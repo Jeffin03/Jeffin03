@@ -2,8 +2,6 @@
 
 # Jeffin Issac
 
----
-
 **Linux · DevOps · Cybersecurity**
 
 [Portfolio](https://jeffin03.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/jfn23) · [Email](mailto:jeffin.issac2203@gmail.com)
