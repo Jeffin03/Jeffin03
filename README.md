@@ -4,56 +4,34 @@
 
 **Linux · DevOps · Cybersecurity**
 
-MCA student at Kristu Jayanti University building across the stack — from frontend to deployment and infrastructure.
+Final-year MCA student at Kristu Jayanti University. I build backend services and automation, and I like understanding how things run underneath them.
 
-**[View Portfolio](https://jeffin03.github.io/Jeffin03/)**
-&nbsp;&nbsp;|&nbsp;&nbsp;
-[LinkedIn](https://www.linkedin.com/in/jfn23)
-&nbsp;&nbsp;|&nbsp;&nbsp;
-jeffin.issac2203@gmail.com
+**Looking for:** DevOps, Linux administration and entry-level developer roles in Bengaluru, Hyderabad, Chennai and Kochi.
+
+[Portfolio](https://jeffin03.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/jfn23) · [Email](mailto:jeffin.issac2203@gmail.com)
 
 </div>
 
 ---
 
-## About
+## What I've Built
 
-I build web applications and enjoy working across the stack, from frontend development to deployment and infrastructure. My current interests include `Linux`, `DevOps`, Backend Systems, Containers, and `Cybersecurity`. Most of what I learn comes from building projects and experimenting with new technologies.
+- **[DevDigest](https://github.com/Jeffin03/DevDigest)** ([live](https://jeffin03.github.io/DevDigest/)) — A developer awareness platform that maintains itself. GitHub Actions run on a schedule to pull CS terms, GitHub security advisories and NIST CVEs, then rebuild and redeploy the site — I haven't touched it manually in months. Python, React, Vite, GitHub Actions.
 
-## What I Work With
+- **[kjit-classroom](https://github.com/Jeffin03/kjit-classroom)** ([live](https://kjit-classroom.vercel.app)) — Replaced my institute's spreadsheet-and-email submission process with a GitHub-native one. Students submit across Sprint 0–3, and faculty review real commits and diffs in-app through the GitHub API, with optional DynamoDB persistence. Next.js 16, TypeScript, NextAuth, GitHub App.
 
-**Development** — Java · Angular · Python · Shell Scripting · JavaScript · REST APIs
+- **[Videre](https://github.com/Jeffin03/Videre)** ([live](https://videreai.netlify.app/)) — Built for my university's cybersecurity society. Most platforms throw you into CTFs; this one teaches the mental models first — the browser as a tool, encoding vs. encryption, mapping an attack surface — because the goal is people who notice things. React.
 
-**DevOps & Infra** — Linux · Docker · Containerization · CI/CD · Microsoft Azure
+- **[ChordPad](https://github.com/Jeffin03/ChordPad)** ([live](https://jeffin03.github.io/ChordPad/)) — My choir needed a way to run chord progressions when the keyboard wasn't available, so this is an offline-capable PWA that plays them in-browser. React, Tone.js.
 
-**Security** — Cybersecurity Fundamentals · Ethical Hacking Essentials
+- **KJUsys Mess Management Module** *(private, employer code)* — RFID mess management for a live university ERP: Angular 16 micro-frontend, Java Vert.x backend, IoT hardware integration, Dockerized services.
 
-**Soft Skills** — Team Leadership · System Design · Problem Solving · Adaptability
+**Currently:** going deeper on Docker, CI/CD pipelines and Linux internals.
+
+## How I Work
+
+Daily Linux user (Arch, Neovim). Conventional commits, changelogs and milestone-based planning on my projects — the same discipline I'd bring to an ops team.
 
 ## Experience
 
-**Full Stack Developer** — Kristu Jayanti Software Development Centre *(May 2026 – June 2026)*
-
-- Led a small full-stack team as technical lead, owning code reviews and guiding implementation decisions.
-- Designed and built Java backend microservices with a focus on service structure, data modeling, and API design.
-- Containerized backend services and built CLI workflows, simplifying team setup and service management.
-- Integrated IoT hardware with the backend for real-time device-to-server communication.
-- Contributed across frontend (Angular) and backend (Java/Vert.x) for a full-stack application.
-
-## Projects
-
-- **KJUsys – Mess Management Module** — Full-stack RFID mess management module (Angular 16 micro-frontend + Java Vert.x backend) built for production rollout in a university ERP system.
-- **DevDigest** — Developer awareness platform aggregating CS knowledge, security advisories, and CVE data.
-- **ShareCare** — Web platform connecting diabetes patients with pharmacies for medicine restocks.
-- **ChordPad** — PWA for keyboardists to run chord progressions when the instrument isn't available.
-
-## Certifications
-
-- LFS101: Introduction to Linux — The Linux Foundation, 2026
-- Ethical Hacking Essentials — EC-Council, 2026
-- Microsoft Certified: Azure Fundamentals — Microsoft, 2025
-- Introduction to Cybersecurity — Cisco, 2021
-
-## Reach Me
-
-[Portfolio](https://jeffin03.github.io/Jeffin03/) · [LinkedIn](https://www.linkedin.com/in/jfn23) · [Email](mailto:jeffin.issac2203@gmail.com)
+**Full Stack Developer Intern**, Kristu Jayanti Software Development Centre *(May – June 2026)* — technical lead for two frontend devs; built the Java Vert.x backend above, containerized it, and wrote the CLI workflows the team still uses.
