@@ -2,11 +2,9 @@
 
 # Jeffin Issac
 
+---
+
 **Linux · DevOps · Cybersecurity**
-
-Final-year MCA student at Kristu Jayanti University. I build backend services and automation, and I like understanding how things run underneath them.
-
-**Looking for:** DevOps, Linux administration and entry-level developer roles in Bengaluru, Hyderabad, Chennai and Kochi.
 
 [Portfolio](https://jeffin03.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/jfn23) · [Email](mailto:jeffin.issac2203@gmail.com)
 
@@ -24,14 +22,12 @@ Final-year MCA student at Kristu Jayanti University. I build backend services an
 
 - **[ChordPad](https://github.com/Jeffin03/ChordPad)** ([live](https://jeffin03.github.io/ChordPad/)) — My choir needed a way to run chord progressions when the keyboard wasn't available, so this is an offline-capable PWA that plays them in-browser. React, Tone.js.
 
-- **KJUsys Mess Management Module** *(private, employer code)* — RFID mess management for a live university ERP: Angular 16 micro-frontend, Java Vert.x backend, IoT hardware integration, Dockerized services.
-
 **Currently:** going deeper on Docker, CI/CD pipelines and Linux internals.
 
 ## How I Work
 
-Daily Linux user (Arch, Neovim). Conventional commits, changelogs and milestone-based planning on my projects — the same discipline I'd bring to an ops team.
+Daily Linux user (ArchBTW hehe). Conventional commits, changelogs and milestone-based planning on my projects, the same discipline I'd bring to an ops team.
 
 ## Experience
 
-**Full Stack Developer Intern**, Kristu Jayanti Software Development Centre *(May – June 2026)* — technical lead for two frontend devs; built the Java Vert.x backend above, containerized it, and wrote the CLI workflows the team still uses.
+**Full Stack Developer Intern**, Kristu Jayanti Software Development Centre *(May – June 2026)* — technical lead of the team; built the Java Vert.x backend above, containerized it, and wrote the CLI workflows the team still uses.
